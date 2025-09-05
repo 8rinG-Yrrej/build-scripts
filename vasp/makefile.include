@@ -71,10 +71,10 @@ LLIBS      += -L$(BREW_ROOT)/lib -lfftw3
 INCS       += -I$(BREW_ROOT)/include
 
 # HDF5-support (optional but strongly recommended, and mandatory for some features)
-#CPP_OPTIONS+= -DVASP_HDF5
-#HDF5_ROOT  ?= /path/to/your/hdf5/installation
-#LLIBS      += -L$(BREW_ROOT)/lib -lhdf5_fortran
-#INCS       += -I$(BREW_ROOT)/include
+CPP_OPTIONS+= -DVASP_HDF5
+HDF5_ROOT  ?= /path/to/your/hdf5/installation
+LLIBS      += -L$(BREW_ROOT)/lib -lhdf5_fortran
+INCS       += -I$(BREW_ROOT)/include
 
 # For the VASP-2-Wannier90 interface (optional)
 #CPP_OPTIONS    += -DVASP2WANNIER90
