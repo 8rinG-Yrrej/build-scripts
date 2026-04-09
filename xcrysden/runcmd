@@ -1,0 +1,7 @@
+# 运行容器
+docker run -p 5901:5901 -e USER=root xcrysden:1.6.2
+
+#docker run  -it --rm \
+#  -e DISPLAY=192.168.3.239:0 \
+#  -v /tmp/.X11-unix:/tmp/.X11-unix \
+#  xcrysden:1.6.2

@@ -1,0 +1,2 @@
+# 添加 --platform 参数指定 x86 架构
+docker build --platform=linux/amd64 -t xcrysden:1.6.2 .
