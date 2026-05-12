@@ -52,7 +52,7 @@ FFLAGS     += $(VASP_TARGET_CPU)
 FFLAGS     += -fallow-argument-mismatch
 
 # BLAS and LAPACK (mandatory)
-OPENBLAS_ROOT ?= /opt/homebrew/Cellar/openblas/0.3.30
+OPENBLAS_ROOT ?= /opt/homebrew/Cellar/openblas/0.3.33
 BLASPACK    = -L$(OPENBLAS_ROOT)/lib -lopenblas
 
 # scaLAPACK (mandatory)
